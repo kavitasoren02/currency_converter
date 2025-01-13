@@ -1,0 +1,114 @@
+/* Currency Converter Styling */
+
+/* Main container */
+.currency-converter-container {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 40px 30px 30px;
+  background: rgb(249, 248, 248);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Add a subtle border */
+}
+
+/* Header */
+h1 {
+  font-size: 24px;
+  font-weight:bolder;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Flex container for input and dropdown */
+.converter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px; /* gap between sections */
+}
+
+/* Currency box styling */
+.currency-box {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+
+/* Arrow button */
+.arrow {
+  font-size: 36px; 
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s ease;
+  color: #4a90e2;  
+}
+
+.arrow:hover {
+  transform: scale(1.1); 
+  color: #007bb5;  
+}
+
+/* Style for select dropdown */
+select {
+  font-size: 16px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  width: 220px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #4a90e2;
+  background-color: #f4f9ff;
+  outline: none;
+}
+
+/* Dropdown options styling */
+select option {
+  font-size: 14px;
+  padding: 10px;
+  background-color: white;
+  color: #333;
+}
+
+select option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Converted amount box */
+.converted-box {
+  font-size: 18px;
+  padding: 12px;
+  background-color: #e6f7ff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling input field */
+input{
+  font-size: 16px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  background-color: #f4f9ff;
+  outline: none;
+}
