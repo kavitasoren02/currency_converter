@@ -1,6 +1,6 @@
 import React, { useState  , useEffect} from "react"
 import './App.css'
-import { use } from "react";
+// import { use } from "react";
 
 function App() {
 
@@ -13,7 +13,8 @@ function App() {
   useEffect (() =>{
     const fetchcurrencies = async () =>{
       try{
-        const response = await fetch("http://localhost:3000/api/getlist")
+        // const response = await fetch("http://localhost:3000/api/getlist")
+        const response = await fetch("https://currency-converter-facf.onrender.com/api/getlist");
         const data =await response.json();
         console.log(data);
         setCurrencies(data.currencies);
@@ -41,7 +42,8 @@ function App() {
     const  convertedCurrency = async () =>{
       if ( fromCurrency && toCurrency ){
         try{
-          const response = await fetch("http://localhost:3000/api/convert" ,{
+          // const response = await fetch("http://localhost:3000/api/convert" ,{
+            const response = await fetch("https://currency-converter-facf.onrender.com/api/convert", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -65,6 +67,7 @@ function App() {
       <h1>Currency Converter</h1>
 
       <div className="converter">
+        
         {/*  from currency section */}
         <div className="currency-box">
           <input type="number" 

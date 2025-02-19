@@ -5,7 +5,7 @@
   max-width: 500px;
   margin: 100px auto;
   padding: 40px 30px 30px;
-  background: rgb(249, 248, 248);
+  background-color: black;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -14,10 +14,10 @@
 
 /* Header */
 h1 {
-  font-size: 24px;
+  font-size: 40px;
   font-weight:bolder;
   margin-bottom: 30px;
-  color: #333;
+  color: #f8f2f2;
   font-family: 'Arial', sans-serif;
 }
 
