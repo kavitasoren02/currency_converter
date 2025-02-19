@@ -44,12 +44,11 @@ function App() {
         try{
           // const response = await fetch("http://localhost:3000/api/convert" ,{
             const response = await fetch("https://currency-converter-facf.onrender.com/api/convert", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({amount , from:fromCurrency , to:toCurrency}),
-          });
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ amount, from: fromCurrency, to: toCurrency }),
+            });
+            
 
           const data = await response.json();
           setConvertedAmount(data.amount);
